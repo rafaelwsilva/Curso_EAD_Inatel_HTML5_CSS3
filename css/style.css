@@ -1,0 +1,38 @@
+body{
+	background-image: url(../img/background.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-position: center center;
+	font-family: sans-serif;
+}
+
+a{
+	color:#366DB5;
+}
+
+a:hover{
+	color:#5690DB;
+}
+
+.header{
+	font-family: cursive;
+	text-align: center;
+	color: #235;
+	font-weight: bold;	
+}
+
+.title{
+	font-size: 40px;
+
+}
+
+.name{
+	font-size: 34px;
+}
+
+.list{
+	margin-top: 50px;
+	text-align: center;
+	font-size:30px;
+}
+
