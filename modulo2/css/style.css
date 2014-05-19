@@ -1,0 +1,19 @@
+body{
+	background-color: #ddd;
+}
+
+.curriculum{
+	margin: 50px 50px 50px 50px;
+	background-color: #aaa;
+	text-align: center;
+}
+
+.header{
+	display: inline;
+}
+
+.photo{
+	height: 160px;
+	border-radius: 10%;
+}
+
