@@ -43,10 +43,15 @@ ul {
     margin: 0 0 32px 17px; 
 }
 
-a { 
+a.email { 
     color: #999; 
     text-decoration: none; 
     border-bottom: 1px dotted #999; 
+}
+
+a:hover { 
+    border-bottom-style: solid; 
+    color: black; 
 }
 
 #page-cv{ 
@@ -56,7 +61,7 @@ a {
 
 #photo { 
     float: right; 
-    margin: -30px 0 0 0; 
+    margin: -30px 30px 0 0; 
     width: 200px;
 }
 
@@ -69,11 +74,6 @@ a {
     font-family: Georgia, Serif; 
     font-style: italic; 
     color: #666; 
-}
-
-a:hover { 
-    border-bottom-style: solid; 
-    color: black; 
 }
 
 div.section{
@@ -101,7 +101,7 @@ div.separator{
    width: 800px; 
    float: right; 
    margin: 0; 
-   height: 15px; 
+   height: 25px; 
 }
 
 .tel,.email{
@@ -109,16 +109,12 @@ div.separator{
     font-style: normal; 
 }
 
-.clear { 
-    clear: both; 
-}
-
 .social{
-
+    float: left;
 }
 
 .img-social{
-
+    width: 60px;
+    text-decoration: none;    
+    padding-right: 
 }
-
-
