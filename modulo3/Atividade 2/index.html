@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Formulário de Opinião</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<form class="formulario" method="POST" accept-charset="utf-8">
+		<fieldset>
+			<legend>Formulário de Opinião</legend>
+			
+			<label for="nome">Nome*</label>
+			<input id="nome" type="text" placeholder="Nome completo" required autofocus>
+			
+			<label for="email">Email</label>
+			<input id="email" type="email" placeholder="user@domain.com">
+
+			<label for="endereco">Endereço</label>
+			<input id="endereco" type="text" placeholder="Endereço completo">
+
+			<label for="fone">Telefone</label>
+			<input id="fone" type="tel" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(xx)-xxxx-xxxx" maxlenght="16">
+			
+			<label for="url">URL</label>
+			<input id="url" type="url" placeholder="www.domain.com.br">
+
+			<label for="mensagem">Mensagem</label>
+			<textarea id="mensagem" name="mensagem" rows="5" placeholder="Deixe aqui sua opinião"></textarea>
+
+			<input type="submit" name="" value="Enviar">
+			
+		</fieldset>
+	</form>
+</body>
+</html>

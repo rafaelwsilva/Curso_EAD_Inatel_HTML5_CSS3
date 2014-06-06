@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Jogo - Figuras e Palavras</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<section>
+		<div class="container-game">
+
+			<div class="header">
+				<span class="highlight">Figuras & Palavras</span> Arraste a palavra para a figura correspondente.
+			</div>
+
+			<div class="container-words">
+				<p class="title">Palavras</p>	
+
+				<div class="word" id="Dog" draggable="true" ondragstart="return dragStart(event)">Cachorro</div>
+				<div class="word" id="Elephant" draggable="true" ondragstart="return dragStart(event)">Elefante</div>
+				<div class="word" id="Cat" draggable="true" ondragstart="return dragStart(event)">Gato</div>
+				<div class="word" id="Lion" draggable="true" ondragstart="return dragStart(event)">Leão</div>
+				<div class="word" id="Bird" draggable="true" ondragstart="return dragStart(event)">Pássaro</div>
+				<div class="word" id="Fish" draggable="true" ondragstart="return dragStart(event)">Peixe</div>
+
+			</div>			
+			
+			<div class="container-pictures">
+				<p class="title">Figuras</p>
+
+				<div class="picture">
+					<img src="images/lion.png" class="image">
+					<div class="word" id="targetLion" ondrop="return dragDrop(event);" ondragover="return dragOver(event);"></div>
+				</div>
+
+				<div class="picture">
+					<img src="images/dog.png" class="image">
+					<div class="word" id="targetDog" ondrop="return dragDrop(event);" ondragover="return dragOver(event);"></div>
+				</div>
+
+				<div class="picture">
+					<img src="images/fish.png" class="image">
+					<div class="word" id="targetFish" ondrop="return dragDrop(event);" ondragover="return dragOver(event);"></div>
+				</div>				
+
+				<div class="picture">
+					<img src="images/bird.png" class="image">
+					<div class="word" id="targetBird" ondrop="return dragDrop(event);" ondragover="return dragOver(event);"></div>
+				</div>
+
+				<div class="picture">
+					<img src="images/cat.png" class="image">
+					<div class="word" id="targetCat" ondrop="return dragDrop(event);" ondragover="return dragOver(event);"></div>
+				</div>
+
+				<div class="picture">
+					<img src="images/elephant.png" class="image">
+					<div class="word" id="targetElephant" ondrop="return dragDrop(event);" ondragover="return dragOver(event);"></div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+	
+	<script type="text/javascript">
+	function dragStart(event) {
+		event.dataTransfer.setData("id", event.target.getAttribute("id"));
+	}
+
+	function dragDrop(event) {
+
+		event.preventDefault();
+		var word = event.dataTransfer.getData("id"),
+		target = event.target.getAttribute("id"),
+		targetName = target.substring(6, target.length);	
+		
+		if(word == targetName) {
+			event.target.classList.remove("word");			
+			event.target.appendChild(document.getElementById(word));
+		
+			var words=document.getElementsByClassName('word');
+
+			if (words.length<7) {
+				alert("Parabéns, você conseguiu!");
+			}
+		}
+	}
+
+	function dragOver(event) {
+		return false;
+	}
+
+	</script>
+</body>
+</html>
