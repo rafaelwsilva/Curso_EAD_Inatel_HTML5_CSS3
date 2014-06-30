@@ -1,4 +1,5 @@
 #menu,
+#menu .activate,
 #menu li,
 #menu li a {
 	margin: 0;
@@ -11,7 +12,7 @@
 
 #menu {	
 	margin: 15px 0 0 0;
-	width:800px;
+	width:720px;
 	border: 1px solid #000;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
@@ -26,8 +27,8 @@
 
 #menu li{	
 	padding: 0 10px 0 10px;
+	margin: 0 5px 0 5px;
 	display: inline;
-	border: 1px solid #000;
 }
 
 #menu li a{
@@ -36,12 +37,17 @@
 	text-shadow: 2px -2px 2px #DDD;
 }
 
-#menu li a:hover,
-#menu .activate{
+#menu li:hover,
+#menu li.activate{
 	color: #fff;
-	padding: 10px 0 0 0;
+	padding: 10px 10px 0 10px;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	text-shadow: 2px -2px 2px #000;
 	background-color: green;
+}
+
+#menu li a:hover{
+	color: #fff;
+	text-shadow: 2px -2px 2px #000;
 }
