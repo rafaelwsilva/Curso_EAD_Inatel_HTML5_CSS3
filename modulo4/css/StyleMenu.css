@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'icons';
+    src: url('../fonts/fontawesome-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #menu,
 #menu .activate,
 #menu li,
@@ -12,7 +19,7 @@
 
 #menu {	
 	margin: 15px 0 0 0;
-	width:720px;
+	width:900px;
 	border: 1px solid #000;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
@@ -50,4 +57,36 @@
 #menu li a:hover{
 	color: #fff;
 	text-shadow: 2px -2px 2px #000;
+}
+
+
+.icon{
+    font-family: 'icons';
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+.icon-home::before{
+	content: '\f015';
+}
+
+.icon-product::before{
+    content: '\f07a';
+}
+
+.icon-service::before{
+    content: '\f0ad';
+}
+
+.icon-about::before{
+    content: '\f1ad';
+}
+
+.icon-link::before{
+    content: '\f14c';
+}
+
+
+.icon-contact::before{
+    content: '\f0e0';
 }

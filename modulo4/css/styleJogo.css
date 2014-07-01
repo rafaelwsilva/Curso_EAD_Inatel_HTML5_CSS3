@@ -1,5 +1,52 @@
+/* animations */
+
+@-webkit-keyframes hideShow {
+	from {-webkit-transform: scale(0,0); }
+	to {-webkit-transform: scale(1,1); }
+}
+
+@keyframes hideShow {
+	from {transform: scale(0,0); }
+	to {transform: scale(1,1); }
+}
+
+@-webkit-keyframes showContainer {
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+@keyframes showContainer {
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+@-webkit-keyframes changeColor {
+	from {color:#9DD1D4;}
+	to {color:blue;}
+}
+
+@keyframes changeColor {
+	from {color:#9DD1D4;}
+	to {color:blue;}
+}
+
+@-webkit-keyframes rotatePictures {
+	from {-webkit-transform: rotateY(0deg);}
+	to {-webkit-transform: rotateY(360deg);}
+}
+
+@keyframes rotatePictures {
+	from {transform: rotateY(0deg);}
+	to {transform: rotateY(360deg);}
+}
+
 *{
 	font-family: arial;
+}
+
+body{
+	-webkit-animation: hideShow 3s;
+	animation: hideShow 3s;
 }
 
 .container-game{
@@ -20,6 +67,13 @@
 	margin-right: 10px;
 	font-weight: bold;
 	font-size: 36px;
+	color:blue;
+	-webkit-animation: changeColor 3s;
+	animation: changeColor 3s;
+	-webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
 }
 
 .container-words{
@@ -30,6 +84,10 @@
 	border-radius: 7px;
 	background-color: #D9E9FA;
 	float: left;
+	-webkit-animation: showContainer 5s;
+	animation: showContainer 5s;
+	-webkit-animation-delay: 3s; 
+    animation-delay: 3s;
 }
 
 .container-pictures{
@@ -40,6 +98,10 @@
 	border-radius: 7px;
 	background-color: #D9E9FA;
 	float: left;
+	-webkit-animation: showContainer 10s;
+	animation: showContainer 10s;
+	-webkit-animation-delay: 8s; 
+    animation-delay: 8s;
 }
 
 p.title{
@@ -79,3 +141,17 @@ p.title{
 	height: 128px;
 	width: 128px;
 }
+
+.image:hover{
+	-webkit-animation:rotatePictures 2s;
+	animation:rotatePictures 2s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.container-words .word:hover{
+	transform: scale(1.25,1.25);      
+	-ms-transform: scale(1.25,1.25);      
+	-webkit-transform: scale(1.25,1.25);
+}	
+
