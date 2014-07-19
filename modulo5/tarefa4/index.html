@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Busca de CEP</title>
+	<title>Tarefa 4 - Busca de CEP</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
 
 		<form method="post" id="form">
 			<label for="inputCep"></label>
-			<input type="text" name="cep" id='inputCep' placeholder="00000-000" pattern="\d{5}-?\d{3}" maxlength="9" required>
+			<input type="text" name="cep" id='inputCep' placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}" maxlength="9" required autofocus>
 			
 			<button type="submit">Buscar</button>
 		</form>

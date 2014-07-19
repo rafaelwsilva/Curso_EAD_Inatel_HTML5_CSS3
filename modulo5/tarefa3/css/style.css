@@ -1,0 +1,74 @@
+*{
+	font-family: 'verdana';
+}
+
+body{
+	background-color: #ccc;
+}
+
+p{
+	display: none;
+}
+
+ul{
+	text-align: center;
+	margin: 0 auto;
+	list-style: none;
+}
+
+li{
+	margin: 0 5px 0 0 ;
+	display: inline;
+}
+
+fieldset{
+	background-color: #fff;
+	width: 600px;
+	margin: 20px auto;
+}
+
+legend{
+	font-size: 30px;
+	text-decoration: underline;
+
+}
+
+h3{
+	font-size: 15px;
+	margin: 0 0 5px 0;
+}
+
+#conteudo{
+	font-size: 15px;
+	text-align: justify;
+}
+
+.sizeFont{
+	text-align: right;
+	padding: 0 0 10px 0;
+	font-size: 12px;
+}
+
+.color{
+	border: 2px solid #000;
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.colorOne{
+	background-color: #F0F470;
+}
+
+.colorTwo{
+	background-color: #8BFA66;
+}
+
+.colorThree{
+	background-color: #B2CAEB;
+}
+
+.colorFour{
+	background-color: #ccc;
+}
