@@ -1,0 +1,88 @@
+@keyframes rodarVeiculo1{
+	from {
+		margin-left: 100%;
+	}
+	to {
+		margin-left: -10%;
+	}
+}
+
+@-webkit-keyframes rodarVeiculo1{
+	from {
+		margin-left: 100%;
+	}
+	to {
+		margin-left: -10%;
+	}
+}
+
+@keyframes rodarVeiculo2{
+	from {
+		margin-left: -10%;
+	}
+	to {
+		margin-left: 100%;
+	}
+}
+
+@-webkit-keyframes rodarVeiculo2{
+	from {
+		margin-left: -10%;
+	}
+	to {
+		margin-left: 100%;
+	}
+}
+
+body{
+	background-color: green;
+}
+
+
+h1{
+	font-family: arial;
+	text-decoration: underline;
+	text-align: center;
+	font-size: 40px;
+	text-shadow: 3px 3px 2px yellow;
+}
+
+.acostamento, 
+.rodovia1,
+.rodovia2{
+	background-color: #595751;
+	display: block;
+}
+
+.acostamento{
+	padding: 50px 0 0 0;
+	margin: 50px auto;
+	width: auto;
+	height: 300px;
+}
+
+.rodovia1{
+	height: 100px;	
+	border-top: 8px solid  #fff ;
+	border-bottom: 8px dashed  #ff0 ;
+}
+
+.rodovia2{
+	height: 100px;		
+	border-bottom: 8px solid  #fff;
+}
+
+.veiculo1{
+	animation:rodarVeiculo1 8s;
+	-webkit-animation: rodarVeiculo1 8s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.veiculo2{
+	-webkit-transform:rotateY(190deg);
+	animation:rodarVeiculo2 10s;
+	-webkit-animation: rodarVeiculo2 10s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
