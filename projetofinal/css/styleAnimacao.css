@@ -34,8 +34,10 @@
 	}
 }
 
-body{
+.animacao{
 	background-color: green;
+	height: 500px;
+	margin: 0 0 10px 0;
 }
 
 
@@ -58,17 +60,17 @@ h1{
 	padding: 50px 0 0 0;
 	margin: 50px auto;
 	width: auto;
-	height: 300px;
+	height: 320px;
 }
 
 .rodovia1{
-	height: 100px;	
+	height: 110px;	
 	border-top: 8px solid  #fff ;
 	border-bottom: 8px dashed  #ff0 ;
 }
 
 .rodovia2{
-	height: 100px;		
+	height: 110px;		
 	border-bottom: 8px solid  #fff;
 }
 

@@ -44,17 +44,15 @@
 	font-family: arial;
 }
 
-body{
-	-webkit-animation: hideShow 3s;
-	animation: hideShow 3s;
-}
-
 .container-game{
 	width: 800px;
 	height: 600px;
+	margin: 0 auto 10px;
 	border: 4px solid #000;
 	border-radius: 10px;
 	background-color: #94C1F2;
+	-webkit-animation: hideShow 3s;
+	animation: hideShow 3s;
 }
 
 .header{
