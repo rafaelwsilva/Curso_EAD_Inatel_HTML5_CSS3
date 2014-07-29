@@ -1,0 +1,58 @@
+.content{
+	margin: 0 auto 15px;
+}
+
+.content h3{
+	text-align: center;
+	text-decoration: underline;
+}
+
+.content fieldset{
+	background-color: #ddd;
+	margin: 0 auto 20px;
+	width: 520px;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 15px;
+	padding-bottom: 15px;
+}
+
+label{
+	font-weight: bolder;
+}
+
+legend{
+	margin: 15px;
+	width: auto;
+	font-size: 20px;
+	text-align: left;
+	text-decoration: underline;
+}
+
+.content footer{
+	margin: 10px auto;
+	width: 520px;
+	text-align: center;	
+}
+
+#outputStudents,
+#outputGrades{
+	list-style: none;
+	display: inline-table;
+}
+
+#outputStudents li,
+#outputGrades li{
+	font-size: 20px;
+	text-align: left;
+}
+
+#average{
+	display: none;
+}
+
+input[type="submit"],
+button{
+	font-weight: bold;
+	height: 30px;
+}

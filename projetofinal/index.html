@@ -38,17 +38,17 @@
 									<li class="dropdown-header">CSS3</li>
 									<li><a href="animacao.html">Animação</a></li>
 									<li><a href="jogo.html">Jogo</a></li>
-									<li><a href="">Menu</a></li>
+									<li><a href="menu.html">Menu</a></li>
 									<li class="divider"></li>
 									<li class="dropdown-header">JavaScript</li>
-									<li><a href="">Cadastro Alunos e Notas</a></li>
-									<li><a href="">Formulário</a></li>
-									<li><a href="">Manipulando Conteudo com Jquery</a></li>
-									<li><a href="">API dos Correios</a></li>
+									<li><a href="cadastroAluno.html">Cadastro Alunos e Notas</a></li>
+									<li><a href="formulario.html">Formulário</a></li>
+									<li><a href="exemploJquery.html">Manipulando Conteudo com Jquery</a></li>
+									<li><a href="buscaCEP.html">API dos Correios</a></li>
 								</ul>
 							</li>
-							<li><a href="">Sobre</a></li>
-							<li><a href="">Download deste Projeto</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="arquivo.zip">Download deste Projeto</a></li>
 						</ul>
 					</div>
 				</div>
@@ -57,14 +57,37 @@
 
 		<section class="text-center"> 
 			<h2>Projeto Final de Rafael William da Silva desenvolvido para o curso <a href="http://www.inatel.br/ead/sobre-o-curso-html5-cc3/tecnologia/css3-html5/sobre-o-curso">Programação e Desenvolvimento Web – CSS3 e HTML5 / EAD Inatel</a></h2>
+
 		</section>
 
 		<footer class="well well-sm text-center">Programação e Desenvolvimento Web – CSS3 e HTML5 / Rafael William da Silva</footer>
 
 	</section>
 
+
+	<div id="destaqueGame" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h3 id="myModalLabel">Conheça o game Figuras & Palavras, um jogo criado somente com HTML5 & CSS3.</h3>
+				</div>
+				<div class="modal-body text-center">
+					<p><img src="images/game.jpg"></p>
+				</div>
+				<div class="modal-footer">
+					<a href="jogo.html" class="btn btn-primary">Jogar</a>
+					<button class="btn" data-dismiss="modal" aria-hidden="true"> Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Scripts -->
 	<script src="js/jquery-2.1.1.js" type="text/javascript"></script>
 	<script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+	$("#destaqueGame").modal('show');
+	</script>
 </body>
 </html>

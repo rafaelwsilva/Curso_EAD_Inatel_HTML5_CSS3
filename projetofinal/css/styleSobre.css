@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'icons';
+    src: url('../fonts/fontawesome-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.content{
+	margin: 0 auto 10px;
+	text-align: center;
+	width: auto;
+	padding: 0 30px;
+}
+
+.content h3{
+	text-align: left;
+	text-decoration: underline;
+}
+
+.content p{
+	font-size: 20px;
+}
+
+.contato{
+	text-align: left;
+}
+
+.contato a:hover{
+	text-decoration: none;
+}
+
+.icon{
+    font-family: 'icons';
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.icon-facebook::before{
+    content: '\f082';
+    color: #3b5998;
+}
+
+.icon-linkedin::before{
+    content: '\f08c';
+    color: #007bb6;
+}
+
+.icon-plus::before{
+    content: '\f0d4';
+    color:#dd4b39;
+}
+
+.icon-git::before{
+    content: '\f092';
+    color: #000;
+
+}

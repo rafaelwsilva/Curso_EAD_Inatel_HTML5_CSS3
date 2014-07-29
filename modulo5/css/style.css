@@ -1,0 +1,49 @@
+body{
+	background-image: url(../images/backgroundIndex.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-position: center center;
+	font-family: sans-serif;
+}
+
+a{
+	color:#366DB5;
+}
+
+ul{
+	 list-style-type: none;
+}
+
+li{
+	padding: 0 0 15px 0;
+}
+
+a{
+	color: #075EBA;
+	text-decoration: none;
+	
+}
+
+a:hover{
+	color:#5690DB;
+}
+
+header{
+	padding: 10px 0 0 0;
+	font-size: 40px;
+	font-family: cursive;
+	text-align: center;
+	color: #235;
+	font-weight: bold;	
+}
+
+.name{
+	font-size: 34px;
+}
+
+.list{
+	margin-top: 50px;
+	text-align: center;
+	font-size:30px;
+}
+

@@ -1,0 +1,58 @@
+.content{
+	font-family: arial;
+	margin: 0 auto 15px;
+}
+
+.content h3{
+	text-align: center;
+	text-decoration: underline;
+	font-weight: bolder;
+}
+
+.content fieldset{
+	margin: 0 auto 15px;
+	width: 300px;
+	text-align: center;
+	border: 1px solid black;
+	background: #eee;
+	padding: 10px;
+}
+
+.content legend{
+	font-size: 30px;
+}
+
+.content input[type='text']{
+	margin: 0 auto 0;
+	display: block;
+	font-size: 20px;
+}
+
+.content button[type='submit']{
+	margin: 10px 0 0 0;
+	font-size: 20px;
+	width: 100px;
+}
+
+.content h1{
+	text-align: center;
+}
+
+#output{
+	margin: 0 auto 0;
+	background-color: #ddd;
+	width: 600px;
+	padding: 0 20px 20px 20px;
+	font-size: 20px;
+	display:none;
+	border: 1px solid black;
+}
+
+.highlighter{
+	font-weight: bolder;
+	padding-bottom: 15px;
+}
+
+.show{
+	display:block;
+}
