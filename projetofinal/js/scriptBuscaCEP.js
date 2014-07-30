@@ -10,7 +10,7 @@ $(document).ready(function () {
 			dataType: 'json',
 			success: function( data ) {
 				console.log(data);
-				$('#output').show();
+				$('#outputCEP').show();
 
 				$('#logradouro').html(data.logradouro);
 				$('#bairro').html(data.bairro);

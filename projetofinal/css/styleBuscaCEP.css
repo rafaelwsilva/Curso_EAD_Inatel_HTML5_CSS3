@@ -1,6 +1,6 @@
 .content{
 	font-family: arial;
-	margin: 0 auto 15px;
+	margin: 0 auto 25px;
 }
 
 .content h3{
@@ -38,7 +38,7 @@
 	text-align: center;
 }
 
-#output{
+#outputCEP{
 	margin: 0 auto 0;
 	background-color: #ddd;
 	width: 600px;

@@ -10,14 +10,13 @@
   padding: 0; 
 }
 
-body { 
-    background: url('../images/backgroundCurriculo.jpg'); 
-}
+.content{
 
-.curriculum{
+    background: url('../images/backgroundCurriculo.jpg'); 
     font: 16px Helvetica, Sans-Serif; 
-    margin: 40px auto ; 
+    margin: 40px auto 0 ; 
     line-height: 24px; 
+	height:1700px;
 }
 
 h1{
@@ -167,7 +166,7 @@ a:link{
 /* Media Queries */
 @media screen and (max-width: 600px) {
 
-    .curriculum{
+    .content{
         width: 90%;
     }
 
@@ -215,7 +214,7 @@ a:link{
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
 
-    .curriculum{
+    .content{
         width: 95%;
     }
 
@@ -250,7 +249,7 @@ a:link{
 
 @media screen and (min-width: 901px){
 
-    .curriculum{
+    .content{
         width: 900px;
     }
 

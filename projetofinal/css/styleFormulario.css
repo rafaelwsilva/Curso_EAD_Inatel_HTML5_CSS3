@@ -1,3 +1,7 @@
+.content{
+	margin: 0 0 10px;
+}
+
 .formulairo{
 	font-family: Verdana, sans-serif;
 }
@@ -8,6 +12,7 @@
 	margin: 0 auto;
 	padding: 0 5px 0 15px;
 	width: 450px;
+	height:auto;
 
 }
 
